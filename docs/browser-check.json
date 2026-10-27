@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-26T09:04:02.832Z",
+  "smokeGameEntries": 8,
+  "completed": [
+    "Schulte beginner3levels",
+    "Trivia5localQuestions"
+  ],
+  "checks": [
+    "session score/time persisted",
+    "history view uses actual game records",
+    "repository subpath",
+    "390px no page overflow",
+    "no external network requests",
+    "no runtime errors"
+  ],
+  "pageErrors": [],
+  "httpFailures": [],
+  "externalRequests": []
+}

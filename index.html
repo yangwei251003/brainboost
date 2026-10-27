@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrainBoost</title>
+    <style>
+      :root {
+        /* Default Cyberpunk Theme */
+        --scifi-bg: #050505;
+        --scifi-card: #0F111A;
+        --scifi-primary: #00F0FF;
+        --scifi-secondary: #7000FF;
+        --scifi-accent: #FF003C;
+        --scifi-success: #00FF94;
+        --scifi-text: #E0E6ED;
+        --scifi-muted: #64748B;
+      }
+
+      body {
+        background-color: var(--scifi-bg);
+        color: var(--scifi-text);
+        font-family: 'Rajdhani', sans-serif;
+        -webkit-tap-highlight-color: transparent;
+        overflow: hidden;
+        transition: background-color 0.5s ease;
+      }
+      .font-display {
+        font-family: 'Orbitron', sans-serif;
+      }
+      ::-webkit-scrollbar {
+        width: 4px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(0,0,0,0.2);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--scifi-primary);
+        border-radius: 10px;
+      }
+      .glass-panel {
+        background: rgba(15, 17, 26, 0.6);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      @keyframes pulse-cyan {
+        0%, 100% { box-shadow: 0 0 10px rgba(var(--scifi-primary-rgb), 0.2); }
+        50% { box-shadow: 0 0 20px rgba(var(--scifi-primary-rgb), 0.5); }
+      }
+      .neon-border {
+        border: 1px solid var(--scifi-primary);
+      }
+    </style>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-scifi-bg text-scifi-text h-screen select-none">
+    <div id="root" class="h-full w-full"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
